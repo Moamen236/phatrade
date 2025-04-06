@@ -4,12 +4,12 @@ networks:
     phatrade:
 
 volumes:
-    adc-database:
+    phatrade-database:
 
 services:
     nginx:
         image: nginx:stable-alpine
-        container_name: nginx-adc
+        container_name: nginx-phatrade
         ports:
           - "${NGINX_PORT}:80"
         volumes:
@@ -25,7 +25,7 @@ services:
         build:
             context: .
             dockerfile: docker/Dockerfile
-        container_name: php-adc
+        container_name: php-phatrade
         volumes:
           - ./:/var/www/html:cached
           - ./storage:/var/www/html/storage
@@ -39,11 +39,11 @@ services:
 
     mysql:
         image: mysql:5.7.22
-        container_name: mysql-adc
+        container_name: mysql-phatrade
         restart: unless-stopped
         tty: true
         volumes:
-            - adc-database:/var/lib/mysql
+            - phatrade-database:/var/lib/mysql
         environment:
             MYSQL_DATABASE: ${DB_DATABASE}
             MYSQL_USER: ${DB_USERNAME}
@@ -56,7 +56,7 @@ services:
 
     phpmyadmin:
         image: phpmyadmin/phpmyadmin
-        container_name: phpmyadmin-adc
+        container_name: phpmyadmin-phatrade
         depends_on:
             - mysql
         ports:
