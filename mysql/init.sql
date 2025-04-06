@@ -1,0 +1,5 @@
+CREATE DATABASE IF NOT EXISTS phatrade;
+ALTER USER 'root'@'%' IDENTIFIED BY 'root';
+CREATE USER IF NOT EXISTS 'phatrade'@'%' IDENTIFIED BY 'root';
+GRANT ALL PRIVILEGES ON phatrade.* TO 'phatrade'@'%';
+FLUSH PRIVILEGES;

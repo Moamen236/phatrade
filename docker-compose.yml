@@ -32,15 +32,16 @@ services:
   # MySQL Service
   db:
     image: mysql:8.0
-    container_name: phatrade_db
+    container_name: phatrade-db
     restart: unless-stopped
     environment:
-      MYSQL_DATABASE: ${DB_DATABASE}
-      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
-      MYSQL_PASSWORD: ${DB_PASSWORD}
-      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_DATABASE: phatrade
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_PASSWORD: root
+      MYSQL_USER: phatrade
     volumes:
       - dbdata:/var/lib/mysql
+      - ./mysql:/docker-entrypoint-initdb.d
     networks:
       - phatrade_network
 
@@ -50,4 +51,4 @@ networks:
 
 volumes:
   dbdata:
-    driver: local 
+    driver: local
