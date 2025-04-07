@@ -16,9 +16,9 @@
     @include('layouts.navbar')
 
     <!-- class="loading" -->
-    <!-- <div id="preloader">
-        <div id="lottie-animation"></div>
-    </div> -->
+    <div id="preloader">
+        <img src="{{ asset('images/loading.gif') }}" alt="Loading...">
+    </div>
 
     <!-- style="opacity: 0;" -->
     <div id="main-content">

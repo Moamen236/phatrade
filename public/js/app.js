@@ -1,10 +1,41 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Preloader
+    const preloader = document.getElementById('preloader');
+    
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            preloader.classList.add('fade-out');
+            setTimeout(function() {
+                preloader.style.display = 'none';
+                document.body.classList.remove('loading');
+            }, 500);
+        }, 1000);
+    });
+
     const navbarToggler = document.getElementById('navbar-toggler');
     const navbarMenu = document.getElementById('navbar-menu');
 
-    navbarToggler.addEventListener('click', function () {
+    // Toggle menu
+    navbarToggler.addEventListener('click', function() {
+        this.classList.toggle('active');
         navbarMenu.classList.toggle('active');
-        navbarToggler.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navbarToggler.classList.remove('active');
+            navbarMenu.classList.remove('active');
+        });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.navbar')) {
+            navbarToggler.classList.remove('active');
+            navbarMenu.classList.remove('active');
+        }
     });
 
     initHeroSlider();
