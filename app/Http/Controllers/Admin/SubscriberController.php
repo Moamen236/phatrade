@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 
 class SubscriberController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function index()
     {
         $subscribers = Subscriber::latest()->get();
