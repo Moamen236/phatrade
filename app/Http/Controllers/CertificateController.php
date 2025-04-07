@@ -9,7 +9,7 @@ class CertificateController extends Controller
 {
     public function index()
     {
-        $banner = Banner::where('type', 'certificates')->latest()->first();
+        $banner = Banner::where('type', 'certifications')->latest()->first();
         return view('certificates', compact('banner'));
     }
 } 
