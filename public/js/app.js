@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 preloader.style.display = 'none';
                 document.body.classList.remove('loading');
             }, 500);
-        }, 1000);
+        }, 4000);
     });
 
     const navbarToggler = document.getElementById('navbar-toggler');
