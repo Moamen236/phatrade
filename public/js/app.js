@@ -243,16 +243,16 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Add animation to submit button
-    const submitBtn = document.querySelector('.submit-btn');
-    submitBtn.addEventListener('mouseenter', function () {
-        const icon = this.querySelector('i');
-        icon.classList.add('animate__animated', 'animate__fadeInLeft');
+    // // Add animation to submit button
+    // const submitBtn = document.querySelector('.submit-btn');
+    // submitBtn.addEventListener('mouseenter', function () {
+    //     const icon = this.querySelector('i');
+    //     icon.classList.add('animate__animated', 'animate__fadeInLeft');
 
-        icon.addEventListener('animationend', function () {
-            icon.classList.remove('animate__animated', 'animate__fadeInLeft');
-        });
-    });
+    //     icon.addEventListener('animationend', function () {
+    //         icon.classList.remove('animate__animated', 'animate__fadeInLeft');
+    //     });
+    // });
 
     // Form submission animation
     const contactForm = document.getElementById('contactForm');

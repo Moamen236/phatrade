@@ -109,9 +109,7 @@
                             Also they have a very strict system for registration which allow us full traceability of any
                             product and prevent any possible mistakes.</p>
                     </div>
-                    <div class="map-image">
-                        <img src="{{ asset('images/egypt-map.png') }}" alt="Egypt Map" class="egypt-map">
-                    </div>
+             
                 </div>
             </div>
         </div>
@@ -160,7 +158,9 @@
             <img src="{{ asset('images/section-decorator.png') }}" alt="" class="decorator right">
         </div>
         <section class="farming-regions">
-
+        <div class="map-image">
+                        <img src="{{ asset('images/egypt-map.png') }}" alt="Egypt Map" class="egypt-map">
+                    </div>
             <div class="region-grid">
                 <div class="region-card" data-aos="fade-up" data-aos-delay="100">
                     <h3>Delta Region</h3>
@@ -213,7 +213,9 @@
                         <li>Cassie</li>
                     </ul>
                 </div>
+               
             </div>
+          
         </section>
     </div>
 

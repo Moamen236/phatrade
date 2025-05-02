@@ -29,6 +29,7 @@ services:
         volumes:
           - ./:/var/www:cached
           - ./storage:/var/www/storage
+          # - ./docker/php.ini:/usr/local/etc/php/conf.d/custom.ini
         networks:
           - phatrade
         environment:
@@ -45,7 +46,7 @@ services:
         volumes:
             - phatrade-database:/var/lib/mysql
         environment:
-            MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+            MYSQL_ROOT_PASSWORD: 1234
             MYSQL_DATABASE: ${DB_DATABASE}
             MYSQL_USER: ${DB_USERNAME}
             MYSQL_PASSWORD: ${DB_PASSWORD}
