@@ -24,3 +24,7 @@
         </div>
     </div>
 </nav> 
+@push('scripts')
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+@endpush

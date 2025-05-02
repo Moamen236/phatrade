@@ -12,31 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 4000);
     });
 
-    const navbarToggler = document.getElementById('navbar-toggler');
-    const navbarMenu = document.getElementById('navbar-menu');
-
-    // Toggle menu
-    navbarToggler.addEventListener('click', function() {
-        this.classList.toggle('active');
-        navbarMenu.classList.toggle('active');
-    });
-
-    // Close menu when clicking a link
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navbarToggler.classList.remove('active');
-            navbarMenu.classList.remove('active');
-        });
-    });
-
-    // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!e.target.closest('.navbar')) {
-            navbarToggler.classList.remove('active');
-            navbarMenu.classList.remove('active');
-        }
-    });
+  
 
     initHeroSlider();
     initProductSliders();
@@ -117,6 +93,12 @@ document.addEventListener('DOMContentLoaded', function () {
         .regions-container,
         .certificates-container
     `);
+
+  document.getElementById("navbar-toggler").addEventListener("click", function () {
+    document.getElementById("navbar-menu").classList.toggle("active");
+  });
+
+
 
     elements.forEach(element => observer.observe(element));
 
