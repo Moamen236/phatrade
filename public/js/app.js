@@ -1,41 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Preloader
     const preloader = document.getElementById('preloader');
-    
-    window.addEventListener('load', function() {
-        setTimeout(function() {
+
+    window.addEventListener('load', function () {
+        setTimeout(function () {
             preloader.classList.add('fade-out');
-            setTimeout(function() {
+            setTimeout(function () {
                 preloader.style.display = 'none';
                 document.body.classList.remove('loading');
             }, 500);
         }, 4000);
-    });
-
-    const navbarToggler = document.getElementById('navbar-toggler');
-    const navbarMenu = document.getElementById('navbar-menu');
-
-    // Toggle menu
-    navbarToggler.addEventListener('click', function() {
-        this.classList.toggle('active');
-        navbarMenu.classList.toggle('active');
-    });
-
-    // Close menu when clicking a link
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navbarToggler.classList.remove('active');
-            navbarMenu.classList.remove('active');
-        });
-    });
-
-    // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!e.target.closest('.navbar')) {
-            navbarToggler.classList.remove('active');
-            navbarMenu.classList.remove('active');
-        }
     });
 
     initHeroSlider();
@@ -119,6 +93,10 @@ document.addEventListener('DOMContentLoaded', function () {
     `);
 
     elements.forEach(element => observer.observe(element));
+
+    document.getElementById("navbar-toggler").addEventListener("click", function () {
+        document.getElementById("navbar-menu").classList.toggle("active");
+    });
 
     // Navbar scroll behavior
     const navbar = document.querySelector('.navbar');
@@ -244,15 +222,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Add animation to submit button
-    const submitBtn = document.querySelector('.submit-btn');
-    submitBtn.addEventListener('mouseenter', function () {
-        const icon = this.querySelector('i');
-        icon.classList.add('animate__animated', 'animate__fadeInLeft');
+    // const submitBtn = document.querySelector('.submit-btn');
+    // submitBtn.addEventListener('mouseenter', function () {
+    //     const icon = this.querySelector('i');
+    //     icon.classList.add('animate__animated', 'animate__fadeInLeft');
 
-        icon.addEventListener('animationend', function () {
-            icon.classList.remove('animate__animated', 'animate__fadeInLeft');
-        });
-    });
+    //     icon.addEventListener('animationend', function () {
+    //         icon.classList.remove('animate__animated', 'animate__fadeInLeft');
+    //     });
+    // });
 
     // Form submission animation
     const contactForm = document.getElementById('contactForm');

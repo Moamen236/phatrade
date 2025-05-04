@@ -10,7 +10,7 @@
                 <span></span>
             </button>
         </div>
-        
+
         <div class="navbar-menu" id="navbar-menu">
             <ul class="navbar-nav">
                 <li><a href="{{ route('home') }}" class="nav-link">Home</a></li>
@@ -23,4 +23,9 @@
             </ul>
         </div>
     </div>
-</nav> 
+</nav>
+
+@push('scripts')
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+@endpush

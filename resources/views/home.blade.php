@@ -104,13 +104,17 @@
             <div class="map-container">
                 <div class="map-content">
                     <div class="map-text">
-                        <h2>Our quality control department </h2>
-                        <p>is very active, very well equipped and run by good technicians.
-                            Also they have a very strict system for registration which allow us full traceability of any
+                        <h2
+                            style="font-weight: 700; color:rgb(255, 255, 255); letter-spacing: 1px; background-color:rgb(75, 159, 255); padding: 15px 20px; border-radius: 32px 0 32px 32px;">
+                            Our Quality Control Department</h2>
+                        <p style="font-size: 18px; line-height: 1.8;">is <strong>very active</strong>, <strong>very well
+                                equipped</strong> and run by <strong>good technicians</strong>.
+                            Also they have a <strong>very strict system</strong> for registration which allow us full
+                            traceability of any
                             product and prevent any possible mistakes.</p>
                     </div>
                     <div class="map-image">
-                        <img src="{{ asset('images/egypt-map.png') }}" alt="Egypt Map" class="egypt-map">
+                        <img src="{{ asset('images/hand.png') }}" alt="Quality Control Department">
                     </div>
                 </div>
             </div>
@@ -160,6 +164,9 @@
             <img src="{{ asset('images/section-decorator.png') }}" alt="" class="decorator right">
         </div>
         <section class="farming-regions">
+            <div class="pha-map">
+                <img src="{{ asset('images/egypt-map.png') }}" alt="Egypt Map" class="egypt-map">
+            </div>
 
             <div class="region-grid">
                 <div class="region-card" data-aos="fade-up" data-aos-delay="100">
