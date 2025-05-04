@@ -956,6 +956,7 @@ nav ul li a {
 /* Map Section Styles */
 .map-section {
     max-width: 1364px;
+    margin: 0 auto;
 }
 
 .map-container {
