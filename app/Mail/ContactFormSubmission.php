@@ -19,7 +19,8 @@ class ContactFormSubmission extends Mailable
 
     public function build()
     {
-        return $this->markdown('emails.contact-form')
-                    ->subject('New Contact Form Submission');
+        return $this->from('web@phatrade-eg.com', 'Phatrade Website')
+            ->subject('New Contact Form Submission')
+            ->markdown('emails.contact-form');
     }
-} 
+}

@@ -29,4 +29,4 @@ class ContactController extends Controller
             'status' => 'success'
         ], 201);
     }
-} 
+}

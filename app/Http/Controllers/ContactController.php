@@ -30,4 +30,4 @@ class ContactController extends Controller
 
         return back()->with('success', 'Thank you for your message. We will contact you soon!');
     }
-} 
+}
