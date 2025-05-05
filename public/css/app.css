@@ -443,33 +443,34 @@ nav ul li a {
 
 .newsletter {
     text-align: left;
-    /* Center the newsletter section */
     padding-left: 16px;
+    width: 100%;
+    max-width: 500px;
 }
 
 .newsletter form {
     display: flex;
     flex-direction: column;
-    /* Stack input and button */
     align-items: flex-start;
-    /* Center items */
     gap: 16px;
-    /* Space between input and button */
+    width: 100%;
+    max-width: 500px;
 }
 
 .newsletter input {
     width: 100%;
-    /* Full width for input */
-    max-width: 300px;
-    /* Max width for input */
     padding: 12px;
     border: none;
     border-radius: 5px;
     outline: none;
     font-size: 16px;
+    margin-bottom: 10px;
+    max-width: 500px;
 }
 
 .newsletter button {
+    width: auto;
+    min-width: 120px;
     padding: 12px 18px;
     background: #f04e30;
     color: white;
@@ -494,41 +495,61 @@ nav ul li a {
 
     .footer {
         padding: 20px;
-        /* Adjust padding for smaller screens */
     }
 
     .footer-content {
         flex-direction: column;
-        /* Stack items vertically */
         align-items: center;
-        /* Center items */
     }
 
     .location,
     .newsletter {
+        width: 100%;
+        max-width: 350px;
         text-align: center;
-        /* Center text on smaller screens */
+        padding: 0 20px;
         margin: 10px 0;
-        /* Margin for stacked items */
     }
 
     .newsletter form {
-        flex-direction: row;
-        /* Align input and button in a row */
-        gap: 5px;
-        /* Space between input and button */
+        align-items: center;
     }
 
     .newsletter input {
-        width: auto;
-        /* Auto width for input */
-        flex: 1;
-        /* Allow input to grow */
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 20px 10px;
     }
 
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .location,
+    .newsletter {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+        padding: 0 10px;
+        margin: 0;
+    }
+
+    .newsletter form {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .newsletter input,
     .newsletter button {
-        width: auto;
-        /* Auto width for button */
+        width: 100%;
+        max-width: 300px;
+       
     }
 }
 
@@ -780,10 +801,10 @@ nav ul li a {
 /* Section Title Styles */
 .section-title {
     text-align: center;
-    margin: 120px auto;
+    margin: 60px auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     max-width: 1364px;
     padding: 0 80px;

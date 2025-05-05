@@ -60,7 +60,7 @@
     <section class="products-section" data-aos="fade-up">
         <div class="section-title">
             <img src="{{ asset('images/section-decorator.png') }}" alt="" class="decorator left">
-            <h2>OUR PRODUCTS</h2>
+            <h2 style="text-align:center;">OUR PRODUCTS</h2>
             <img src="{{ asset('images/section-decorator.png') }}" alt="" class="decorator right">
         </div>
     </section>
@@ -95,11 +95,7 @@
 
     <!-- Map Section -->
     <section class="map-section" data-aos="fade-up">
-        <div class="section-title">
-            <img src="{{ asset('images/section-decorator.png') }}" alt="" class="decorator left">
-            <h2>MAP</h2>
-            <img src="{{ asset('images/section-decorator.png') }}" alt="" class="decorator right">
-        </div>
+       
         <div class="container">
             <div class="map-container">
                 <div class="map-content">
