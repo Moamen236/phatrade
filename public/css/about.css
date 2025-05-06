@@ -17,24 +17,6 @@
     margin-bottom: 60px;
 }
 
-/* Section Title */
-.section-title {
-    text-align: center;
-    margin: 60px 0 40px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.section-title h2 {
-    font-size: 2rem;
-    color: var(--text-color);
-    margin: 0 20px;
-    font-weight: 700;
-    position: relative;
-}
-
 .section-title .decorator {
     height: 30px;
     opacity: 0.7;

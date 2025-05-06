@@ -1,3 +1,31 @@
+@font-face {
+    font-family: 'Acumin Variable Concept';
+    src: url('/fonts/AcuminVariableConcept.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ageone';
+    src: url('/fonts/Ageone.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ageone Bold';
+    src: url('/fonts/Ageone_bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monotype Corsiva';
+    src: url('/fonts/MTCORSVA.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* General Styles */
 :root {
     --primary-color: #2c3e50;
@@ -15,7 +43,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Acumin Variable Concept', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     margin: 0;
@@ -27,6 +55,18 @@ body {
     background-attachment: fixed;
     min-height: 100vh;
     padding-top: 100px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+    font-family: 'Acumin Variable Concept', sans-serif;
+    font-weight: bold;
 }
 
 /* Header Styles */
@@ -804,7 +844,7 @@ nav ul li a {
     margin: 60px auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
     max-width: 1364px;
     padding: 0 80px;
