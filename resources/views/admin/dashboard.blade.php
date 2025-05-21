@@ -154,6 +154,6 @@
 @endsection
 
 @section('scripts')
-    <script src="{{ asset('admin/vendors/apexcharts/apexcharts.js') }}"></script>
-    <script src="{{ asset('admin/js/pages/dashboard.js') }}"></script>
+    <!-- <script src="{{ asset('admin/vendors/apexcharts/apexcharts.js') }}"></script> -->
+    <!-- <script src="{{ asset('admin/js/pages/dashboard.js') }}"></script> -->
 @endsection

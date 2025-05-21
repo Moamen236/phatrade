@@ -25,17 +25,17 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
             'name' => 'Admin',
             'email' => 'admin@phatrade.com',
-            'password' => Hash::make('password'),
+            'password' => Hash::make(env('ADMIN_PASSWORD')),
             'is_admin' => true,
         ]);
 
-        $this->call([
-            ProductSeeder::class,
-            BannerSeeder::class,
-            ContactSeeder::class,
-            FactoryModelSeeder::class,
-            FarmSeeder::class,
-            SubscriberSeeder::class,
-        ]);
+        // $this->call([
+        //     ProductSeeder::class,
+        //     BannerSeeder::class,
+        //     ContactSeeder::class,
+        //     FactoryModelSeeder::class,
+        //     FarmSeeder::class,
+        //     SubscriberSeeder::class,
+        // ]);
     }
 }
