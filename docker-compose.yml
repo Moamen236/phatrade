@@ -29,6 +29,7 @@ services:
         volumes:
           - ./:/var/www:cached
           - ./storage:/var/www/storage
+          - ./docker/php.ini:/usr/local/etc/php/conf.d/custom.ini
         networks:
           - phatrade
         environment:
