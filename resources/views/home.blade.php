@@ -45,12 +45,8 @@
                 <img src="{{ asset('images/about/about-image.jpg') }}" alt="About Phatrade">
             </div>
             <div class="about-content">
-                <h2 class="subtitle">WE ARE GETTING BACK TO OUR ROOTS PHATRADE</h2>
-                <p>is located in Obour City (about 15 min. to the airport)
-                    In this facility we have our head office, factory, laboratory, packing and shipping department. We
-                    produce in this factory some of our products such as Chamomile Blue Oil, Cumin Oil, Parsley Oil and some
-                    other products. One of the main reasons for the success of our company is quality control, research and
-                    development.</p>
+                <h2 class="subtitle">We are honored to introduce Mr.Adolf Todros</h2>
+                <p>The esteemed CEO and founder of PHATRADE, a leading company specializing in Essential Oils, Concretes, and Absolutes. Born in 1945 in Qena Governorate of Upper Egypt, Mr.Adolf's journey is rooted in a deep understanding of the land. After graduating from the Faculty of Agriculture, he dedicated years to the agricultural field, cultivating invaluable expertise. It was this profound experience and vision that led him to establish PHATRADE, transforming his passion for nature's extracts into a thriving enterprise</p>
                 <a href="{{ route('about') }}" class="btn btn-primary">More About Us</a>
             </div>
         </div>
@@ -101,13 +97,10 @@
                 <div class="map-content">
                     <div class="map-text">
                         <h2
-                            style="font-weight: 700; color:rgb(255, 255, 255); letter-spacing: 1px; background-color:rgb(75, 159, 255); padding: 15px 20px; border-radius: 32px 0 32px 32px;">
-                            Our Quality Control Department</h2>
-                        <p style="font-size: 18px; line-height: 1.8;">is <strong>very active</strong>, <strong>very well
-                                equipped</strong> and run by <strong>good technicians</strong>.
-                            Also they have a <strong>very strict system</strong> for registration which allow us full
-                            traceability of any
-                            product and prevent any possible mistakes.</p>
+                            style="font-weight: 500; color:rgb(255, 255, 255); letter-spacing: .5px; background-color:rgb(75, 159, 255); padding: 15px 20px; border-radius: 32px 0 32px 32px; ">
+                            Quality Control & Assurance Departments</h2>
+                        <p style="font-size: 18px; line-height: 1.8;">Our Quality Control (QC) and Quality Assurance (QA) departments operate with the highest standards of precision and efficiency. Staffed by skilled technicians and equipped with state-of-the-art technology, these departments ensure rigorous compliance with quality protocols at every stage of production.
+<br> <br> A key strength of our system is the stringent documentation process, which guarantees full traceability for every product. This meticulous approach not only upholds product integrity but also minimizes the risk of errors, reinforcing our commitment to delivering consistent, high-quality results.                        </p>
                     </div>
                     <div class="map-image">
                         <img src="{{ asset('images/hand.png') }}" alt="Quality Control Department">
