@@ -50,17 +50,19 @@
                         Trusted by the Best, Driven by Excellence</p>
                     </div>
                 </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="timeline-content">
+                        <h3>Our oils, concrete, and Absolute</h3>
+                        <p> A Future Rooted in Nature, Perfected by Science <br> <br> For nearly 50 years, we’ve bridged nature’s finest ingredients with the ever-changing needs of the global fragrance and flavor industries. <br> At PHTRADE, we don’t just produce essential oils—we craft experiences, preserving the soul of nature in every drop.</p>
+                        <a href="{{ route('contact') }}" class="btn btn-primary">Get in Touch</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- New Section: Contact Us -->
-    <section class="contact-us">
-        <h2>Our oils, concrete, and Absolute</h2>
-        <p style="font-size:16px; padding-left:4rem; padding-right:4rem; text-align:left; ">Are chosen by premium manufacturers across the USA and Europe, a testament to our uncompromising quality and traceability. Behind every batch is our dedicated Quality Control team—technicians and doctors who uphold rigorous standards, backed by a strict registration system that guarantees full transparency at every step.
-        A Future Rooted in Nature, Perfected by Science <br> <br> For nearly 50 years, we’ve bridged nature’s finest ingredients with the ever-changing needs of the global fragrance and flavor industries. At PHTRADE, we don’t just produce essential oils—we craft experiences, preserving the soul of nature in every drop.</p>
-        <a href="{{ route('contact') }}" class="btn btn-primary">Get in Touch</a>
-    </section>
+ 
 
 
 
