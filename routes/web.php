@@ -8,9 +8,11 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FactoryController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CertificateController;
+use App\Http\Controllers\SustainabilityController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about', [AboutController::class, 'index'])->name('about');
+Route::get('/sustainability', [SustainabilityController::class, 'index'])->name('sustainability');
 Route::get('/factories', [FactoryController::class, 'index'])->name('factories');
 Route::get('/farm', [FarmController::class, 'index'])->name('farm');
 Route::get('/certificates', [CertificateController::class, 'index'])->name('certificates');

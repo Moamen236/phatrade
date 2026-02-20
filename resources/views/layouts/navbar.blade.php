@@ -19,6 +19,7 @@
                 <li><a href="{{ route('farm') }}" class="nav-link">Farm</a></li>
                 <li><a href="{{ route('factories') }}" class="nav-link">Factories</a></li>
                 <li><a href="{{ route('certificates') }}" class="nav-link">Certificates</a></li>
+                <li><a href="{{ route('sustainability') }}" class="nav-link">Sustainability</a></li>
                 <li><a href="{{ route('contact') }}" class="nav-link">Contact Us</a></li>
             </ul>
         </div>
