@@ -29,17 +29,17 @@
                     <div class="col-md-6">
                         <div class="form-group mb-3">
                             <label for="category" class="form-label">Category</label>
-                            <select class="form-select @error('category') is-invalid @enderror" id="category"
-                                name="category" required>
+                            <select class="form-select @error('category_id') is-invalid @enderror" id="category"
+                                name="category_id" required>
                                 <option value="">Select a category</option>
                                 @foreach ($categories as $category)
                                     <option value="{{ $category->id }}"
-                                        {{ old('category') == $category->id ? 'selected' : '' }}>
+                                        {{ old('category_id') == $category->id ? 'selected' : '' }}>
                                         {{ $category->name }}
                                     </option>
                                 @endforeach
                             </select>
-                            @error('category')
+                            @error('category_id')
                                 <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
                         </div>
