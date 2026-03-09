@@ -9,10 +9,6 @@ class Farm extends Model
     protected $fillable = [
         'name',
         'description',
-        'images'
-    ];
-
-    protected $casts = [
-        'images' => 'array'
+        'image_path'
     ];
 }

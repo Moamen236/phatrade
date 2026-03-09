@@ -91,7 +91,7 @@
 
     <!-- Map Section -->
     <section class="map-section" data-aos="fade-up">
-       
+
         <div class="container">
             <div class="map-container">
                 <div class="map-content">
@@ -240,8 +240,10 @@
             // Initialize Hero Slider
             new Swiper('.hero-slider', {
                 loop: true,
+                speed: 1000,
+                pauseOnMouseEnter: true,
                 autoplay: {
-                    delay: 5000,
+                    delay: 20000, // ✅ 20 seconds
                     disableOnInteraction: false,
                 },
                 pagination: {

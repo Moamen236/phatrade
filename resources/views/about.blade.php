@@ -22,38 +22,38 @@
                 <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="timeline-content">
                         <h3>1975</h3>
-                        <p>a vision took root—a vision to bring the finest spices and herbs from Egypt to the world. That vision became PHATRADE, a company built on passion, expertise, and an unwavering commitment to quality.</p>
+                        <p class="capitalize-first">a vision took root—a vision to bring the finest spices and herbs from Egypt to the world. That vision became PHATRADE, a company built on passion, expertise, and an unwavering commitment to quality.</p>
                     </div>
                 </div>
                 <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
                     <div class="timeline-content">
                         <h3>1977</h3>
-                        <p>we had already made our mark in the American market, earning a reputation for excellence in natural ingredients.</p>
+                        <p class="capitalize-first">we had already made our mark in the American market, earning a reputation for excellence in natural ingredients.</p>
                     </div>
                 </div>
                 <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
                     <div class="timeline-content">
                         <h3>1987</h3>
-                        <p>we ventured into Essential Oil production, a natural evolution given our deep understanding of raw materials. But our journey didn’t stop there. As demand for pure, aromatic extracts grew, we saw an opportunity to expand our expertise. </p>
+                        <p class="capitalize-first">we ventured into Essential Oil production, a natural evolution given our deep understanding of raw materials. But our journey didn’t stop there. As demand for pure, aromatic extracts grew, we saw an opportunity to expand our expertise. </p>
                     </div>
                 </div>
                 <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
                     <div class="timeline-content">
                         <h3>Just two years later, in 1989</h3>
-                        <p>we fulfilled our first major order—a milestone that set the stage for decades of leadership in the industry.</p>
+                        <p class="capitalize-first">we fulfilled our first major order—a milestone that set the stage for decades of leadership in the industry.</p>
                     </div>
                 </div>
                 <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
                     <div class="timeline-content">
                         <h3>Present</h3>
-                        <p>Today, PHATRADE stands as a globally trusted name in Natural Essential Oils, Concretes, Absolutes, and Aroma Chemicals. With two state-of-the-art distillation and extraction facilities in Egypt (Obour City - Cairo & Sadat City), we blend cutting-edge technology with sustainable farming, growing select crops on our own farm to ensure purity from seed to bottle.
+                        <p class="capitalize-first">Today, PHATRADE stands as a globally trusted name in Natural Essential Oils, Concretes, Absolutes, and Aroma Chemicals. With two state-of-the-art distillation and extraction facilities in Egypt (Obour City - Cairo & Sadat City), we blend cutting-edge technology with sustainable farming practice, growing select crops on our own farm to ensure purity from seed to bottle.
                         Trusted by the Best, Driven by Excellence</p>
                     </div>
                 </div>
                 <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
                     <div class="timeline-content">
-                        <h3>Our oils, concrete, and Absolute</h3>
-                        <p> A Future Rooted in Nature, Perfected by Science <br> <br> For nearly 50 years, we’ve bridged nature’s finest ingredients with the ever-changing needs of the global fragrance and flavor industries. <br> At PHTRADE, we don’t just produce essential oils—we craft experiences, preserving the soul of nature in every drop.</p>
+                        <h3>Our Oils, Concrete, and Absolute</h3>
+                        <p class="capitalize-first"> A Future Rooted in Nature, Perfected by Science <br> <br> For nearly 50 years, we’ve bridged nature’s finest ingredients with the ever-changing needs of the global fragrance and flavor industries. <br> At PHATRADE, we don’t just produce essential Oils we craft experiences, preserving the soul of nature in every drop.</p>
                         <a href="{{ route('contact') }}" class="btn btn-primary">Get in Touch</a>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
     </section>
 
     <!-- New Section: Contact Us -->
- 
+
 
 
 

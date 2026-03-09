@@ -589,7 +589,7 @@ nav ul li a {
     .newsletter button {
         width: 100%;
         max-width: 300px;
-       
+
     }
 }
 
@@ -940,7 +940,7 @@ nav ul li a {
     border-radius: 32px;
     overflow: hidden;
     display: flex;
-    height: 673px;
+    height: 535px;
 }
 
 .about-image {
@@ -955,7 +955,7 @@ nav ul li a {
 }
 
 .about-content {
-    flex: 1;
+    flex: 2;
     padding: 60px;
     display: flex;
     flex-direction: column;
@@ -2137,4 +2137,13 @@ p {
         margin: 10px 0;
         /* Add margin between slides */
     }
+}
+
+/* Global Styles */
+.text-capitalize{
+    text-transform: capitalize;
+}
+
+.capitalize-first::first-letter {
+  text-transform: uppercase;
 }

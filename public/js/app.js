@@ -234,6 +234,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Form submission animation
     const contactForm = document.getElementById('contactForm');
+    if(!contactForm) return;
     contactForm.addEventListener('submit', function (e) {
         // You can add a loading animation here if needed
         const submitBtn = this.querySelector('.submit-btn');
