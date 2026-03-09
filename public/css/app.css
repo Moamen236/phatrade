@@ -891,9 +891,9 @@ nav ul li a {
 
 @media (max-width: 768px) {
     .section-title {
-        padding: 0 30px;
-        width: calc(100% - 20px);
-
+        padding: 0;
+        width: auto;
+        margin: 20px auto;
     }
 
     .section-title .decorator {
@@ -906,12 +906,25 @@ nav ul li a {
         font-size: var(--h2-size);
     }
 
+    .timeline{
+        padding: 0 !important;
+    }
 
+    .timeline-item{
+        padding-left: 40px !important;
+    }
 
     .fade-in-up,
     .fade-in-left,
     .fade-in-right {
         animation-duration: 0.8s;
+    }
+
+    .timeline-item{
+        border-left: 0 !important;
+    }
+    .section-title h2{
+        white-space: wrap;
     }
 }
 
